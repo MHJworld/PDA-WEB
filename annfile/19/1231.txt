@@ -1,0 +1,6 @@
+$con=mysqli_connect("localhost", "root", "root", "test");
+	// 이 형식으로 test 스키마에 접근
+
+$sql="INSERT INTO stu (Id, Password, Name, Hakbun)
+VALUES ('$_POST[id]','$_POST[password]',$_POST[name],$_POST[hakbun])";
+	// test 스키마에서 stu 테이블에 값 삽입
